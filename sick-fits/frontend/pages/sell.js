@@ -6,9 +6,6 @@ const Sell = props=> (
     <div>
     <p>pakcspk</p>
     {/* Link allows not to refresh the page */}
-    <Link href="/">
-        <a>HOME</a>
-    </Link>
     </div>
 )
 
