@@ -1,0 +1,2 @@
+endpoint: https://eu1.prisma.sh/julie/e-commerce-website/dev
+datamodel: datamodel.prisma
