@@ -1,7 +1,3 @@
-#schema is our public face API
-
-#we use '#' before to import. We use the item object we already created in prisma.graphql
-
 #import * from './generated/prisma.graphql'
 
 type Mutation {
@@ -12,9 +8,13 @@ type Mutation {
         image: String,
         largeImage: String
     ) 
+    # we know what is item because weimported it at the top of the document
     : Item!
 }
 
 type Query {
     items: [Item]!
 }
+
+#schema is our public face API
+#we use '#' before to import. We use the item object we already created in prisma.graphql

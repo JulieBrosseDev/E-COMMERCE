@@ -2,19 +2,20 @@
 # if @unique doesn't work try with @id.
 
 type User {
-  id: ID! @unique
+  id: ID! @id
   name: String!
   email: String!
 }
 
 type Item {
-  id: ID! @unique
+  id: ID! @id
   title: String!
   description: String!
   image: String
   largeImage: String
   price: Int!
-  #createdAt: DateTime!
+  #createAt: DateTime!
+  #updateAt: DateTime!
   #user: User!
 }
 
