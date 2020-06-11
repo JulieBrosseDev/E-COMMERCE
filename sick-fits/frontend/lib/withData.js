@@ -1,5 +1,7 @@
 import withApollo from 'next-with-apollo';
+//Apollo boost : official package from appollo to work with clients
 import ApolloClient from 'apollo-boost';
+// endpoint : shows where does the API ends
 import { endpoint } from '../config';
 
 function createClient({ headers }) {
