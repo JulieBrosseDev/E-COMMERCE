@@ -1,8 +1,8 @@
 require('dotenv').config({path: 'variables.env'});
-const createServer = require('createServer');
+const createServer = require('./createServer');
 const db = require('./db');
 
-const ver = createServer()
+const server = createServer()
 
 //use express middleware to handle cookies
 

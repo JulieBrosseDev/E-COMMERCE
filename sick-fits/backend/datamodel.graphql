@@ -1,6 +1,20 @@
+#this is prisma
+# if @unique doesn't work try with @id.
+
 type User {
-  id: ID! @id
+  id: ID! @unique
   name: String!
   email: String!
+}
+
+type Item {
+  id: ID! @unique
+  title: String!
+  description: String!
+  image: String
+  largeImage: String
+  price: Int!
+  #createdAt: DateTime!
+  #user: User!
 }
 

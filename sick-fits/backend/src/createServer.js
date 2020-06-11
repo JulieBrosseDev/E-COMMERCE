@@ -20,4 +20,4 @@ function createServer() {
     });
 }
 
-module.exports = CreateServer;
+module.exports = createServer;

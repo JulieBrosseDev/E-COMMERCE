@@ -1,0 +1,20 @@
+#schema is our public face API
+
+#we use '#' before to import. We use the item object we already created in prisma.graphql
+
+#import * from './generated/prisma.graphql'
+
+type Mutation {
+    createItem(
+        title: String,
+        description: String,
+        price: Int,
+        image: String,
+        largeImage: String
+    ) 
+    : Item!
+}
+
+type Query {
+    items: [Item]!
+}
